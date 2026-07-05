@@ -1,0 +1,90 @@
+@HotelApi_HostAddress = https://localhost:30639
+
+GET {{HotelApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST https://localhost:7777/api/admin
+Content-Type: application/json
+
+{
+  "id": 1,
+  "cost": 1500.00,
+  "description": "Комната люкс с видом на море",
+  "busy": false
+}
+
+###
+
+POST {{HotelApi_HostAddress}}/api/admin
+Content-Type: application/json
+
+{
+  "cost": -2500.00,
+  "description": "Двухместный номер с кондиционером",
+  "busy": false
+}
+
+###
+
+GET {{HotelApi_HostAddress}}/api/admin
+
+###
+
+GET {{HotelApi_HostAddress}}/api/admin/6
+
+###
+
+PATCH {{HotelApi_HostAddress}}/api/client/3
+
+###
+
+GET {{HotelApi_HostAddress}}/api/client/3
+
+###
+
+PUT {{HotelApi_HostAddress}}/api/admin
+Content-Type: application/json
+
+{
+    "id": 6,
+    "cost": -800.50,
+    "description": "Стандартный одноместный номер",
+    "busy": false
+}
+
+###
+
+PATCH {{HotelApi_HostAddress}}/api/client/5
+
+###
+
+DELETE {{HotelApi_HostAddress}}/api/admin/3
+
+###
+
+PATCH {{HotelApi_HostAddress}}/api/client/5
+
+###
+
+GET {{HotelApi_HostAddress}}/api/client/2
+
+###
+
+@id=3
+DELETE {{HotelApi_HostAddress}}/api/admin/{{id}}
+
+###
+
+PATCH {{HotelApi_HostAddress}}/api/client/{{id}}
+
+###
+
+GET {{HotelApi_HostAddress}}/api/admin
+
+###
+
+GET {{HotelApi_HostAddress}}/api/admin
+
+###

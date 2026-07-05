@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="HotelApi.Domain/HotelApi.Domain.csproj" />
+  <Project Path="HotelApi.Services/HotelApi.Services.csproj" />
+  <Project Path="HotelApi.DataAccess/HotelApi.DataAccess.csproj" />
+  <Project Path="HotelApi.Api/HotelApi.Api.csproj" />
+</Solution>
